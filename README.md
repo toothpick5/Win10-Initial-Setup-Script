@@ -1,4 +1,4 @@
-<~|  YO FOOL!! This is TOOTHPICK'S config file for miners so GTFO!!   ...fool  |~>
+<~  YO FOOL!! This is TOOTHPICK'S config file for miners so GTFO!!   ...fool  ~>
 
 ## Contents
  - [Description](#description)
