@@ -1,3 +1,5 @@
+<~|  YO FOOL!! This is TOOTHPICK'S config file for miners so GTFO!!   ...fool  |~>
+
 ## Contents
  - [Description](#description)
  - [Usage](#usage)

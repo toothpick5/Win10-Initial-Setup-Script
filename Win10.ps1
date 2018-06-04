@@ -1,8 +1,9 @@
-##########
-# Win10 / WinServer2016 Initial Setup Script
-# Author: Disassembler <disassembler@dasm.cz>
-# Version: development
-# Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
+##########                                          _____________________________________
+# Win10 / WinServer2016 Initial Setup Script  *  <~| Toothpick's GPU Miner Configuration |~>
+# Author: Toothpick5 <Me, FOOL!!!>
+# Version: 5-4-18
+# Source: https://github.com/toothpick5/Win10-Initial-Setup-Script
+# Forked From: Disassembler <disassembler@dasm.cz>
 ##########
 
 # Default preset
@@ -13,7 +14,7 @@ $tweaks = @(
 	### Privacy Tweaks ###
 	"DisableTelemetry",             # "EnableTelemetry",
 	"DisableWiFiSense",             # "EnableWiFiSense",
-	# "DisableSmartScreen",         # "EnableSmartScreen",
+	"DisableSmartScreen",         # "EnableSmartScreen",
 	"DisableWebSearch",             # "EnableWebSearch",
 	"DisableAppSuggestions",        # "EnableAppSuggestions",
 	"DisableActivityHistory",       # "EnableActivityHistory",
@@ -31,9 +32,9 @@ $tweaks = @(
 	"DisableWAPPush",               # "EnableWAPPush",
 
 	### Security Tweaks ###
-	# "SetUACLow",                  # "SetUACHigh",
+	 "SetUACLow",                  # "SetUACHigh",
 	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
-	"DisableAdminShares",           # "EnableAdminShares",
+	#"DisableAdminShares",           # "EnableAdminShares",
 	# "DisableSMB1",                # "EnableSMB1",
 	# "DisableSMBServer",           # "EnableSMBServer",
 	# "DisableLLMNR",               # "EnableLLMNR",
@@ -42,33 +43,33 @@ $tweaks = @(
 	# "DisableNetDevicesAutoInst",  # "EnableNetDevicesAutoInst",
 	# "EnableCtrldFolderAccess",    # "DisableCtrldFolderAccess",
 	# "DisableFirewall",            # "EnableFirewall",
-	# "DisableDefender",            # "EnableDefender",
-	# "DisableDefenderCloud",       # "EnableDefenderCloud",
+	 "DisableDefender",            # "EnableDefender",
+	 "DisableDefenderCloud",       # "EnableDefenderCloud",
 	"EnableF8BootMenu",             # "DisableF8BootMenu",
 	"SetDEPOptOut",                 # "SetDEPOptIn",
 	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
-	"DisableScriptHost",            # "EnableScriptHost",
-	"EnableDotNetStrongCrypto",     # "DisableDotNetStrongCrypto",
+	#"DisableScriptHost",            # "EnableScriptHost",
+	#"EnableDotNetStrongCrypto",     # "DisableDotNetStrongCrypto",
 	# "EnableMeltdownCompatFlag"    # "DisableMeltdownCompatFlag",
 
 	### Service Tweaks ###
-	# "DisableUpdateMSRT",          # "EnableUpdateMSRT",
-	# "DisableUpdateDriver",        # "EnableUpdateDriver",
+	 "DisableUpdateMSRT",          # "EnableUpdateMSRT",
+	 "DisableUpdateDriver",        # "EnableUpdateDriver",
 	"DisableUpdateRestart",         # "EnableUpdateRestart",
-	# "DisableHomeGroups",          # "EnableHomeGroups",
+	 "DisableHomeGroups",          # "EnableHomeGroups",
 	"DisableSharedExperiences",     # "EnableSharedExperiences",
 	"DisableRemoteAssistance",      # "EnableRemoteAssistance",
 	"EnableRemoteDesktop",          # "DisableRemoteDesktop",
 	"DisableAutoplay",              # "EnableAutoplay",
 	"DisableAutorun",               # "EnableAutorun",
-	# "EnableStorageSense",         # "DisableStorageSense",
+	 "EnableStorageSense",         # "DisableStorageSense",
 	# "DisableDefragmentation",     # "EnableDefragmentation",
-	# "DisableSuperfetch",          # "EnableSuperfetch",
-	# "DisableIndexing",            # "EnableIndexing",
+	 "DisableSuperfetch",          # "EnableSuperfetch",
+	 "DisableIndexing",            # "EnableIndexing",
 	# "SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
 	# "EnableHibernation",          # "DisableHibernation",
-	# "DisableSleepButton",         # "EnableSleepButton",
-	# "DisableSleepTimeout",        # "EnableSleepTimeout",
+	 "DisableSleepButton",         # "EnableSleepButton",
+	 "DisableSleepTimeout",        # "EnableSleepTimeout",
 	# "DisableFastStartup",         # "EnableFastStartup",
 
 	### UI Tweaks ###
@@ -76,8 +77,8 @@ $tweaks = @(
 	"HideAccountProtectionWarn",    # "ShowAccountProtectionWarn",
 	"DisableLockScreen",            # "EnableLockScreen",
 	# "DisableLockScreenRS1",       # "EnableLockScreenRS1",
-	"HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
-	"HideShutdownFromLockScreen",   # "ShowShutdownOnLockScreen",
+	#"HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
+	#"HideShutdownFromLockScreen",   # "ShowShutdownOnLockScreen",
 	"DisableStickyKeys",            # "EnableStickyKeys",
 	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
@@ -85,12 +86,12 @@ $tweaks = @(
 	"HideTaskbarSearch",            # "ShowTaskbarSearchIcon",      # "ShowTaskbarSearchBox",
 	"HideTaskView",                 # "ShowTaskView",
 	"ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
-	"SetTaskbarCombineWhenFull",    # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
+	#"SetTaskbarCombineWhenFull",     "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
 	"HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
 	"ShowTrayIcons",                # "HideTrayIcons",
 	"DisableSearchAppInStore",      # "EnableSearchAppInStore",
 	"DisableNewAppPrompt",          # "EnableNewAppPrompt",
-	# "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
+	 "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
 	"SetVisualFXPerformance",       # "SetVisualFXAppearance",
 	# "AddENKeyboard",              # "RemoveENKeyboard",
 	# "EnableNumlock",              # "DisableNumlock",
@@ -98,7 +99,7 @@ $tweaks = @(
 	### Explorer UI Tweaks ###
 	"ShowKnownExtensions",          # "HideKnownExtensions",
 	"ShowHiddenFiles",              # "HideHiddenFiles",
-	# "HideSelectCheckboxes",       # "ShowSelectCheckboxes",
+	# "HideSelectCheckboxes",        "ShowSelectCheckboxes",
 	"HideSyncNotifications"         # "ShowSyncNotifications",
 	"HideRecentShortcuts",          # "ShowRecentShortcuts",
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
@@ -108,32 +109,32 @@ $tweaks = @(
 	# "HideDesktopFromExplorer",    # "ShowDesktopInExplorer",
 	"HideDocumentsFromThisPC",      # "ShowDocumentsInThisPC",
 	# "HideDocumentsFromExplorer",  # "ShowDocumentsInExplorer",
-	"HideDownloadsFromThisPC",      # "ShowDownloadsInThisPC",
+	#"HideDownloadsFromThisPC",       "ShowDownloadsInThisPC",
 	# "HideDownloadsFromExplorer",  # "ShowDownloadsInExplorer",
 	"HideMusicFromThisPC",          # "ShowMusicInThisPC",
-	# "HideMusicFromExplorer",      # "ShowMusicInExplorer",
+	"HideMusicFromExplorer",        # "ShowMusicInExplorer",
 	"HidePicturesFromThisPC",       # "ShowPicturesInThisPC",
 	# "HidePicturesFromExplorer",   # "ShowPicturesInExplorer",
 	"HideVideosFromThisPC",         # "ShowVideosInThisPC",
 	# "HideVideosFromExplorer",     # "ShowVideosInExplorer",
 	"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
-	# "Hide3DObjectsFromExplorer",  # "Show3DObjectsInExplorer",
+	"Hide3DObjectsFromExplorer",    # "Show3DObjectsInExplorer",
 	# "DisableThumbnails",          # "EnableThumbnails",
 	"DisableThumbnailCache",        # "EnableThumbnailCache",
 	"DisableThumbsDBOnNetwork",     # "EnableThumbsDBOnNetwork",
 
 	### Application Tweaks ###
-	"DisableOneDrive",              # "EnableOneDrive",
-	"UninstallOneDrive",            # "InstallOneDrive",
+	#"DisableOneDrive",              # "EnableOneDrive",
+	#"UninstallOneDrive",            # "InstallOneDrive",
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
 	"DisableXboxFeatures",          # "EnableXboxFeatures",
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
 	"DisableEdgeShortcutCreation",  # "EnableEdgeShortcutCreation",
-	# "UninstallMediaPlayer",       # "InstallMediaPlayer",
+	 "UninstallMediaPlayer",       # "InstallMediaPlayer",
 	# "UninstallInternetExplorer",  # "InstallInternetExplorer",
-	# "UninstallWorkFolders",       # "InstallWorkFolders",
+	 "UninstallWorkFolders",       # "InstallWorkFolders",
 	# "InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
 	# "InstallHyperV",              # "UninstallHyperV",
 	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
@@ -141,7 +142,7 @@ $tweaks = @(
 	# "UninstallPDFPrinter",        # "InstallPDFPrinter",
 	"UninstallXPSPrinter",          # "InstallXPSPrinter",
 	"RemoveFaxPrinter",             # "AddFaxPrinter",
-	# "UninstallFaxAndScan",        # "InstallFaxAndScan",
+	 "UninstallFaxAndScan",        # "InstallFaxAndScan",
 
 	### Server Specific Tweaks ###
 	# "HideServerManagerOnLogin",   # "ShowServerManagerOnLogin",
